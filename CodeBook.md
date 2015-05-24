@@ -34,7 +34,7 @@ UNITS: Activity names are character strings as shown below
 * STANDING
 * LAYING
 
-*####Features:         
+####Features:         
 -These are the various features that are being measure during any of the above activities by the                    
 subject. There are 79 features being measured. The names of the features measured indicate the
 following aspects of the measurements that will help in making sense of the feature being
@@ -42,7 +42,7 @@ measured.
 UNITS: The measures are numeric values measured in Hz.
 Note: Features are normalized and bounded within [-1,1]
 
-*##### Time and Frequency
+##### Time and Frequency
 Each feature measurement is prefixed by a “t” or an “f” to indicate a “time” or a “freq”
 values captured at a constant 50Hz. A Fast Fourier Transform (FFT) was applied to some of these               
 freq signals (indicated by the prefix f) producing fBodyAcc-XYZ, fBodyAccJerk-XYZ,
@@ -74,113 +74,160 @@ norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkM
 
 #####The Feature List being reported
 
-1.                 tbodyaccmeanx
-2.                 tbodyaccmeany
-3.                 tbodyaccmeanz
+1.  tbodyaccmeanx
 
-4.                 tbodyaccstdx
-5.                  tbodyaccstdy
-6.                  tbodyaccstdz
+2.  tbodyaccmeany
 
-7.              tgravityaccmeanx
-8.              tgravityaccmeany
+3.  tbodyaccmeanz
+
+4.  tbodyaccstdx
+
+5.  tbodyaccstdy
+
+6.  tbodyaccstdz
+
+7.  tgravityaccmeanx
+
+8.  tgravityaccmeany
+
 9.              tgravityaccmeanz
 
 10.              tgravityaccstdx
+
 11.              tgravityaccstdy
+
 12.              tgravityaccstdz
 
 13.            tbodyaccjerkmeanx
+
 14.            tbodyaccjerkmeany
+
 15.            tbodyaccjerkmeanz
 
 16.             tbodyaccjerkstdx
+
 17.             tbodyaccjerkstdy
+
 18.             tbodyaccjerkstdz
 
 19.               tbodygyromeanx
+
 20.               tbodygyromeany
+
 21.               tbodygyromeanz
 
 22.                tbodygyrostdx
+
 23.                tbodygyrostdy
+
 24.                tbodygyrostdz
 
 25.           tbodygyrojerkmeanx
+
 26.           tbodygyrojerkmeany
+
 27.           tbodygyrojerkmeanz
 
 28.            tbodygyrojerkstdx
+
 29.            tbodygyrojerkstdy
+
 30.            tbodygyrojerkstdz
 
 31.              tbodyaccmagmean
+
 32.               tbodyaccmagstd
 
 33.           tgravityaccmagmean
+
 34.            tgravityaccmagstd
 
 35.          tbodyaccjerkmagmean
+
 36.           tbodyaccjerkmagstd
 
 37.             tbodygyromagmean
+
 38.              tbodygyromagstd
 
 39.         tbodygyrojerkmagmean
+
 40.          tbodygyrojerkmagstd
 
 41.                fbodyaccmeanx
+
 42.                fbodyaccmeany
+
 43.                fbodyaccmeanz
 
 44.                 fbodyaccstdx
+
 45.                 fbodyaccstdy
+
 46.                 fbodyaccstdz
 
 47.            fbodyaccmeanfreqx
+
 48.            fbodyaccmeanfreqy
+
 49.            fbodyaccmeanfreqz
 
 50.            fbodyaccjerkmeanx
+
 51.            fbodyaccjerkmeany
+
 52.            fbodyaccjerkmeanz
 
 53.             fbodyaccjerkstdx
+
 54.             fbodyaccjerkstdy
+
 55.             fbodyaccjerkstdz
 
 56.        fbodyaccjerkmeanfreqx
+
 57.        fbodyaccjerkmeanfreqy
+
 58.        fbodyaccjerkmeanfreqz
 
 59.               fbodygyromeanx
+
 60.               fbodygyromeany
+
 61.               fbodygyromeanz
 
 62.                fbodygyrostdx
+
 63.                fbodygyrostdy
+
 64.                fbodygyrostdz
 
 65.           fbodygyromeanfreqx
+
 66.           fbodygyromeanfreqy
+
 67.           fbodygyromeanfreqz
 
 68.              fbodyaccmagmean
+
 69.               fbodyaccmagstd
 
 70.          fbodyaccmagmeanfreq
 
 71.      fbodybodyaccjerkmagmean
+
 72.       fbodybodyaccjerkmagstd
 
 73.  fbodybodyaccjerkmagmeanfreq
 
 74.         fbodybodygyromagmean
+
 75.          fbodybodygyromagstd
 
 76.     fbodybodygyromagmeanfreq
 
 77.     fbodybodygyrojerkmagmean
+
 78.      fbodybodygyrojerkmagstd
 
 79. fbodybodygyrojerkmagmeanfreq
