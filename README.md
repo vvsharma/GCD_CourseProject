@@ -44,8 +44,8 @@ The course project requirement is to create a run_analysis.R script that accompl
         realationships between the various data sets given to us. The SUBJECTS are either 
         'test' or 'train' subjects who are peforming one of the 7 ACTIVITIES which are tracked 
         as FEATUERES and their MEASUREMENTS. In other words, in a relational database modeling 
-        exercise, we would model them as tables and relationships resulting in a final intersecting 
-        table that captures the data by each Subject, Activity and Feature Measure. 
+        exercise, we would model them as tables and relationships resulting in a final 
+        intersecting table that captures the data by each Subject, Activity and Feature Measure. 
         This is our final combined dataset SAM, short for SubjectActivityMeasure.
 
 ### Process:
