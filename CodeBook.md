@@ -1,6 +1,4 @@
-
-#Code Book for the TidyData.txt.
-
+#Code Book for the TidyData.txt.  
 ## Study Design
 
 This TidyData.txt file is the result of gathering data from the experiments that have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities like **WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING** while wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, the data was captured as 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The labels for the data were manually assigned from the video-recordings of the experiments. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.  
@@ -69,7 +67,8 @@ and tBodyGyroJerk-XYZ)
 The “mag” magnitude of these three-dimensional signals were calculated using the Euclidean
 norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).
 
-#####The Feature List being reported
+#####The Feature List being reported.
+(The above description of the components of the feature name will aid in understanting the feature being measured)
 
 1. tbodyaccmeanx 
 
@@ -237,7 +236,7 @@ performing the activities. The values are numeric.
 ######Acknowledgements:
 
 This entire cleaning operation would not have been possible without references to the following entries from the 
-Discussion Groups like 
+Discussion Groups like [David Hood's FAQ](https://class.coursera.org/getdata-014/forum/thread?thread_id=30). Also referenced were some good insights on Tidy data like [Hadley Wickam's Tidy Data article](http://vita.had.co.nz/papers/tidy-data.pdf), [David Hood's Tidy data observation in relation to the assignment](https://class.coursera.org/getdata-014/forum/thread?thread_id=31).  As far as variable naming conventions and recommended practices, it is important to fast forward to the week 4 lectures on in the video on "Editing Text Variables".
 
 These datasets were a derivation of those mentioned in the following publication.
 
