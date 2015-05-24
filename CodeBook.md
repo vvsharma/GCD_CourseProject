@@ -1,10 +1,11 @@
-#CodeBook.md
-##Code Book for the TidyData.txt.
+
+#Code Book for the TidyData.txt.
 
 ###Introduction:
 This TidyData.txt file is the result of gathering data from the experiments that have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, the data was captured as 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The labels for the data were manually assigned from the video-recordings of the experiments. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.  
 
-The features' measurements were captured from the accelerometer and gyroscope reading from the Samsung galaxy phone.The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details.  
+The features' measurements were captured from the accelerometer and gyroscope reading 
+from the Samsung galaxy phone.The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details.  
 
 ###Description of the data and the variables
 This codebook describes the variables and the permissible values for TidyData.txt file.
@@ -17,24 +18,24 @@ This is the identifier for the subject being monitored either as a “train”in
 There were 30 subjects being monitored for their activities and the values range from 1-30. 
 There were no missing subjects and all 30 are present in the dataset. All subject ids are numeric.
 
-activityname:  
+####activityname:  
 These are the list of 7 possible activities that the subjects were monitored for.
 These values are character strings as enumerated below:
 
-1 WALKING
-2 WALKING_UPSTAIRS
-3 WALKING_DOWNSTAIRS
-4 SITTING
-5 STANDING
-6 LAYING
+*1 WALKING
+*2 WALKING_UPSTAIRS
+*3 WALKING_DOWNSTAIRS
+*4 SITTING
+*5 STANDING
+*6 LAYING
 
-variable:         
-These are the various features that are being measure during any of the above activities by the                    
+####variable:         
+-These are the various features that are being measure during any of the above activities by the                    
 subject. There are 79 features being measured. The names of the features measured indicate the
 following aspects of the measurements that will help in making sense of the feature being
 measured.
 
-Time and Frequency
+##### Time and Frequency
 Each feature measurement is prefixed by a “t” or an “f” to indicate a “time” or a “freq”
 values captured at a constant 50Hz. A Fast Fourier Transform (FFT) was applied to some of these               
 freq signals (indicated by the prefix f) producing fBodyAcc-XYZ, fBodyAccJerk-XYZ,
@@ -140,5 +141,6 @@ norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkM
 78      fbodybodygyrojerkmagstd
 79 fbodybodygyrojerkmagmeanfreq
 
-mean:               These values were been calculated for each of the feature that was measured for the subjects
+####mean:              
+These values were been calculated for each of the feature that was measured for the subjects
 performing the activities. The values are numeric. 
