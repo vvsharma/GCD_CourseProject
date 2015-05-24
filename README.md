@@ -45,10 +45,10 @@ The course project requirement is to create a run_analysis.R script that accompl
         seperately to combine the Subject, Activity, Feature and the Measurements using the 
         cbind. It is also important to eliminate all but the mean and std measures before the 
         final step. 
-        
+        ```
         #####STEPS
         * For each of the train and test data the following steps are performed separately.
-
+                ```
                 1. The subjects are read in from the "subject_train.txt" or the 
                    "subject_test.txt". 
         
@@ -79,6 +79,7 @@ The course project requirement is to create a run_analysis.R script that accompl
                 
                 11.Finally the Subject Activity table from the above step 5 is combined with the 
                    feature data using "cbind".
-
+                ```   
         * The test and train data are now combined together using the "rbind" as required 
                 by objective #1.
+        ```
