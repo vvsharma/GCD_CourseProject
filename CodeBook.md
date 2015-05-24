@@ -53,7 +53,9 @@ frequency reading).
 #####These values may be further measured along the 3 axial signals along X, Y and Z directions. 
 
 *X - the corresponding reading of the feature measured in the X axis
+
 *Y - the corresponding reading of the feature measured in the Y axis
+
 *Z - the corresponding reading of the feature measured in the Z axis
 
 #####Body & Gravity
@@ -71,8 +73,7 @@ norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkM
 
 #####The Feature List being reported
 
-1. tbodyaccmeanx
-
+1. tbodyaccmeanx 
 2. tbodyaccmeany
 
 3. tbodyaccmeanz
