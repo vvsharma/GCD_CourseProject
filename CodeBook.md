@@ -35,7 +35,7 @@ UNITS: Activity names are character strings as shown below
 * LAYING
 
 ####Features:         
--These are the various features that are being measure during any of the above activities by the                    
+These are the various features that are being measure during any of the above activities by the                    
 subject. There are 79 features being measured. The names of the features measured indicate the
 following aspects of the measurements that will help in making sense of the feature being
 measured.
@@ -43,21 +43,18 @@ UNITS: The measures are numeric values measured in Hz.
 Note: Features are normalized and bounded within [-1,1]
 
 ##### Time and Frequency
-Each feature measurement is prefixed by a “t” or an “f” to indicate a “time” or a “freq”
-values captured at a constant 50Hz. A Fast Fourier Transform (FFT) was applied to some of these               
-freq signals (indicated by the prefix f) producing fBodyAcc-XYZ, fBodyAccJerk-XYZ,
+Each feature measurement is prefixed by a “t” or an “f” to indicate a “time” or a “freq” values captured at a constant 50Hz. A Fast Fourier Transform (FFT) was applied to some of these freq signals (indicated by the prefix f) producing fBodyAcc-XYZ, fBodyAccJerk-XYZ,
 fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag.
 
 The suffix of the feature has a mean/std or meanfreq indicating whether the captured metric is a
 mean or standard deviation or a Weighted average of the frequency components (to obtain a mean
 frequency reading). 
 
-#####These values may be further measured along the 3 axial signals along X, Y and
-Z directions. 
+#####These values may be further measured along the 3 axial signals along X, Y and Z directions. 
 
-X - the corresponding reading of the feature measured in the X axis
-Y - the corresponding reading of the feature measured in the Y axis
-Z - the corresponding reading of the feature measured in the Z axis
+*X - the corresponding reading of the feature measured in the X axis
+*Y - the corresponding reading of the feature measured in the Y axis
+*Z - the corresponding reading of the feature measured in the Z axis
 
 #####Body & Gravity
 The second component of the name is “**body**” or “**gravity**” to indicate body or gravitational
