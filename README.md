@@ -32,44 +32,53 @@ The course project requirement is to create a run_analysis.R script that accompl
         them in the same order. Applying all the labels from the reference table first obviates 
         any need of complicated processing later on.
 
-        Using the relational database normalization principles allows us to understand the realationships 
-        between the various data sets given to us. The SUBJECTS are either 'test' or 'train' subjects who 
-        are peforming one of the 7 ACTIVITIES which are tracked as FEATUERES and their MEASUREMENTS.  
-        In other words, in a relational database modeling exercise, we would model them as tables and 
-        relationships resulting in a final intersecting table that captures the data by each Subject, 
-        Activity and Feature Measure. This is our final combined dataset SAM, short for SubjectActivityMeasure.
+        Using the relational database normalization principles allows us to understand the 
+        realationships between the various data sets given to us. The SUBJECTS are either 
+        'test' or 'train' subjects who are peforming one of the 7 ACTIVITIES which are tracked 
+        as FEATUERES and their MEASUREMENTS. In other words, in a relational database modeling 
+        exercise, we would model them as tables and relationships resulting in a final intersecting 
+        table that captures the data by each Subject, Activity and Feature Measure. 
+        This is our final combined dataset SAM, short for SubjectActivityMeasure.
 
 ### Process:
-        Each of the training and test data are processed (tagged with the labels and tidied) seperately 
-        to combine the Subject, Activity, Feature and the Measurements using the cbind. It is also 
-        important to eliminate all but the mean and std measures before the final step. 
+        Each of the training and test data are processed (tagged with the labels and tidied) 
+        seperately to combine the Subject, Activity, Feature and the Measurements using the 
+        cbind. It is also important to eliminate all but the mean and std measures before the 
+        final step. 
         
-#####STEPS
+        #####STEPS
         * For each of the train and test data the following steps are performed separately.
 
-                1. The subjects are read in from the "subject_train.txt" or the "subject_test.txt". 
+                1. The subjects are read in from the "subject_train.txt" or the 
+                   "subject_test.txt". 
         
                 2. We assign a label of "subjectid" to the subject ids column.
         
-                3. The activities (from y_train.txt or y_test.txt ) and the activity labels from "../activity_labels" 
-                   files are "merge"ed on the activity id. 
+                3. The activities (from y_train.txt or y_test.txt ) and the activity labels 
+                   from "../activity_labels" files are "merge"ed on the activity id. 
                 
-                4. The activity id column is eliminated and "activityname" is assigned as the name for the activity. 
+                4. The activity id column is eliminated and "activityname" is assigned as 
+                        the name for the activity. 
                 
-                5. The subject and the activity tables are now combined using "cbind"" with the resulting table having 
-                   subjectid and activityname as columns.
+                5. The subject and the activity tables are now combined using "cbind"" with 
+                the resulting table having subjectid and activityname as columns.
                 
-                6. The features masurement data is loaded from the "x_train.txt"" or "x_test.txt" file.
+                6. The features masurement data is loaded from the "x_train.txt"" or 
+                        "x_test.txt" file.
                 
-                7. The labels for the feature set is loaded from the features.txt file and converted to lowercase.
+                7. The labels for the feature set is loaded from the features.txt file and 
+                        converted to lowercase.
                 
-                8. The feature lables (some 561 of them) are applied to the feature measurement data.  
+                8. The feature lables (some 561 of them) are applied to the feature measurement 
+                data.  
                 
-                9. The feature columns that are not either "mean" or "std" are eliminated using grep. 
+                9. The feature columns that are not either "mean" or "std" are eliminated using 
+                grep. 
                 
                 10.The column names are cleaned up of - and () charactes using gsub.
                 
                 11.Finally the Subject Activity table from the above step 5 is combined with the 
                    feature data using "cbind".
 
-        * The test and train data are now combined together using the "rbind" as required by objective #1.
+        * The test and train data are now combined together using the "rbind" as required 
+                by objective #1.
