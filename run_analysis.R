@@ -2,7 +2,7 @@
 # Getting and Cleaning Data - COURSE PROJECT
 #
 # This comment explains the course project requirements and the methodology
-# applied in coming up with the solution.
+# applied in coming up with the solution. A more concise explanation is availabe in the README.md file.
 #
 # The raw data provided is in multiple files in multiple directory.
 # I have extracted the original zip data file into a "data" directory in 
@@ -200,7 +200,7 @@ y<-ddply(tallntidy, .(subjectid,activityname, variable), summarize, mean=mean(va
 #
 setwd(MainDir) # return to Main dir and create the Tidy file there.
 write.table(y, "TidyData.txt", row.name=FALSE)
-#Plesae note that the row.name=FALSE will remove any file headers.
+#Please note that the row.name=FALSE will remove any file headers.
 
 # NOTE TO PEER EVALUATORS:  
 #
