@@ -99,9 +99,9 @@ The course project requirement is to create a run_analysis.R script that accompl
                    all the features and value column for the measurement of the features for each 
                    and every subject and activity.
         
-                2. Use the "ddply" from the plyr package to summarize the data using mean funciton 
-                   as the final step
+                2. Use the "ddply" from the plyr package to summarize the data using mean function 
+                   as mentioned in the final step 5 of the requirements.
                    
                 3. Write out the file using write.table with the row.name=FALSE option.
                 
-                
+##Conclusions:         
