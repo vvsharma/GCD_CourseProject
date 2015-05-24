@@ -13,11 +13,11 @@ This directory also contains 2 sub-directories called "train" and "test". These 
 The course project requirement is to create a run_analysis.R script that accomplishes the following objectives.
  
         1. Merges the training and the test sets to create one data set.
-        2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+        2. Extracts only the measurements on the mean and standard deviation for each feature. 
         3. Uses descriptive activity names to name the activities in the data set
         4. Appropriately labels the data set with descriptive variable names. 
-        5. From the data set in step 4, creates a second, independent tidy data set with the average 
-           of each variable for each activity and each subject.
+        5. From the data set in step 4, creates a second, independent tidy data set with the 
+           average of each variable for each activity and each subject.
 
 ###Deliverables: 
         The output from the last step of the objectives is a long form Tidy Data set as per 
@@ -45,21 +45,31 @@ The course project requirement is to create a run_analysis.R script that accompl
         important to eliminate all but the mean and std measures before the final step. 
         
 #####STEPS
-        For each of the train and test data the following steps are performed.
+        * For each of the train and test data the following steps are performed separately.
 
-        1. The subjects are read in from the "subject_train.txt" or the "subject_test.txt". 
-
-        2. We assign a label of "subjectid" to the subject ids column.
-
-        3. The activities (from y_train.txt or y_test.txt ) and the activity labels from "../activity_labels" 
-           files are "merge"ed on the activity id. 
+                1. The subjects are read in from the "subject_train.txt" or the "subject_test.txt". 
         
-        4. The activity id column is eliminated and "activityname" is assigned as the name for the activity. 
+                2. We assign a label of "subjectid" to the subject ids column.
         
-        5. The subject and the activity tables are now combined using "cbind"" with the resulting table having 
-           subjectid and activityname as columns.
-        
-        6. 
-        The subject and the resulting activity tables are   
+                3. The activities (from y_train.txt or y_test.txt ) and the activity labels from "../activity_labels" 
+                   files are "merge"ed on the activity id. 
+                
+                4. The activity id column is eliminated and "activityname" is assigned as the name for the activity. 
+                
+                5. The subject and the activity tables are now combined using "cbind"" with the resulting table having 
+                   subjectid and activityname as columns.
+                
+                6. The features masurement data is loaded from the "x_train.txt"" or "x_test.txt" file.
+                
+                7. The labels for the feature set is loaded from the features.txt file and converted to lowercase.
+                
+                8. The feature lables (some 561 of them) are applied to the feature measurement data.  
+                
+                9. The feature columns that are not either "mean" or "std" are eliminated using grep. 
+                
+                10.The column names are cleaned up of - and () charactes using gsub.
+                
+                11.Finally the Subject Activity table from the above step 5 is combined with the 
+                   feature data using "cbind".
 
-
+        * The test and train data are now combined together using the "rbind" as required by objective #1.
