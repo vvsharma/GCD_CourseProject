@@ -45,10 +45,10 @@ The course project requirement is to create a run_analysis.R script that accompl
         seperately to combine the Subject, Activity, Feature and the Measurements using the 
         cbind. It is also important to eliminate all but the mean and std measures before the 
         final step. 
-        ```
-        #####STEPS
+        
+        *STEPS*
         * For each of the train and test data the following steps are performed separately.
-                ```
+                
                 1. The subjects are read in from the "subject_train.txt" or the 
                    "subject_test.txt". 
         
@@ -58,28 +58,28 @@ The course project requirement is to create a run_analysis.R script that accompl
                    from "../activity_labels" files are "merge"ed on the activity id. 
                 
                 4. The activity id column is eliminated and "activityname" is assigned as 
-                        the name for the activity. 
+                   the name for the activity. 
                 
                 5. The subject and the activity tables are now combined using "cbind"" with 
-                the resulting table having subjectid and activityname as columns.
+                   the resulting table having subjectid and activityname as columns.
                 
                 6. The features masurement data is loaded from the "x_train.txt"" or 
-                        "x_test.txt" file.
+                   "x_test.txt" file.
                 
                 7. The labels for the feature set is loaded from the features.txt file and 
-                        converted to lowercase.
+                   converted to lowercase.
                 
                 8. The feature lables (some 561 of them) are applied to the feature measurement 
-                data.  
+                   data.  
                 
                 9. The feature columns that are not either "mean" or "std" are eliminated using 
-                grep. 
+                   grep. 
                 
                 10.The column names are cleaned up of - and () charactes using gsub.
                 
                 11.Finally the Subject Activity table from the above step 5 is combined with the 
                    feature data using "cbind".
-                ```   
+                   
         * The test and train data are now combined together using the "rbind" as required 
-                by objective #1.
-        ```
+          by objective #1.
+        
