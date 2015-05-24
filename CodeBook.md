@@ -52,17 +52,17 @@ frequency reading).
 
 #####These values may be further measured along the 3 axial signals along X, Y and Z directions. 
 
-*X - the corresponding reading of the feature measured in the X axis
+* X - the corresponding reading of the feature measured in the X axis
 
-*Y - the corresponding reading of the feature measured in the Y axis
+* Y - the corresponding reading of the feature measured in the Y axis
 
-*Z - the corresponding reading of the feature measured in the Z axis
+* Z - the corresponding reading of the feature measured in the Z axis
 
 #####Body & Gravity
 The second component of the name is “**body**” or “**gravity**” to indicate body or gravitational
 signals as separated using a Butterworth low-pass filter. 
 
-#####Linear and Angular metricx
+#####Linear and Angular metrics
 The “acc” and “gyro” indicate that the feature was measured as the body linear     
 acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ     
 and tBodyGyroJerk-XYZ)
@@ -74,26 +74,16 @@ norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkM
 #####The Feature List being reported
 
 1. tbodyaccmeanx 
-2. tbodyaccmeany
-
-3. tbodyaccmeanz
-
-4. tbodyaccstdx
-
-5. tbodyaccstdy
-
-6. tbodyaccstdz
-
-7. tgravityaccmeanx
-
-8. tgravityaccmeany
-
-9. tgravityaccmeanz
-
-10.tgravityaccstdx
-
-11.tgravityaccstdy
-
+2. tbodyaccmeany 
+3. tbodyaccmeanz 
+4. tbodyaccstdx 
+5. tbodyaccstdy 
+6. tbodyaccstdz 
+7. tgravityaccmeanx 
+8. tgravityaccmeany 
+9. tgravityaccmeanz 
+10.tgravityaccstdx 
+11.tgravityaccstdy 
 12.tgravityaccstdz
 
 13.tbodyaccjerkmeanx
