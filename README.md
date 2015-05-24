@@ -1,6 +1,14 @@
 # Course Project
 ## Introduction
 
+Note to testers:
+
+1. You can read the final file from step 5 using 'data<-read.table("TidyData.txt")' and examine them using the many
+   functions such as head, str, summary etc. in R. 
+
+2. You can source the run_analysis.R file in your main directory as long as the data directory "UCI HAR Dataset" and    
+   its necessary sub-direactories are in it.
+
 ###Motivation: 
 This project aims at providing an overall practical exposure to getting and cleaning data. To that end, the objectives of the project are to read in data collected from 30 subjects performing activities which are monitored and measured using the accelerometer and gyroscope readings in a Samsung smart phone worn at the waist of the subject. This has resulted in data being collected for over 561 features during each of the activity being performed by the subject. This data is dirty in the sense that it cannot be processed without putting it in some sort of order using well defined methods and principles that allows some level of automatic processing using the R scripting language.
 
@@ -83,3 +91,17 @@ The course project requirement is to create a run_analysis.R script that accompl
         * The test and train data are now combined together using the "rbind" as required 
           by objective #1.
         
+        * As the final stage of this project, in order to create the TidyData.txt file, the 
+          libraries *"reshape2"* and *"plyr"* are required.
+            
+                1. First we "melt" the wide table into long table grouping on subjectid and 
+                   activityname. This create a tall (and tidy) table with "variable" column for 
+                   all the features and value column for the measurement of the features for each 
+                   and every subject and activity.
+        
+                2. Use the "ddply" from the plyr package to summarize the data using mean funciton 
+                   as the final step
+                   
+                3. Write out the file using write.table with the row.name=FALSE option.
+                
+                
