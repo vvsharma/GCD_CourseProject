@@ -74,163 +74,163 @@ norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkM
 
 #####The Feature List being reported
 
-1.  tbodyaccmeanx
+1. tbodyaccmeanx
 
-2.  tbodyaccmeany
+2. tbodyaccmeany
 
-3.  tbodyaccmeanz
+3. tbodyaccmeanz
 
-4.  tbodyaccstdx
+4. tbodyaccstdx
 
-5.  tbodyaccstdy
+5. tbodyaccstdy
 
-6.  tbodyaccstdz
+6. tbodyaccstdz
 
-7.  tgravityaccmeanx
+7. tgravityaccmeanx
 
-8.  tgravityaccmeany
+8. tgravityaccmeany
 
-9.              tgravityaccmeanz
+9. tgravityaccmeanz
 
-10.              tgravityaccstdx
+10.tgravityaccstdx
 
-11.              tgravityaccstdy
+11.tgravityaccstdy
 
-12.              tgravityaccstdz
+12.tgravityaccstdz
 
-13.            tbodyaccjerkmeanx
+13.tbodyaccjerkmeanx
 
-14.            tbodyaccjerkmeany
+14.tbodyaccjerkmeany
 
-15.            tbodyaccjerkmeanz
+15.tbodyaccjerkmeanz
 
-16.             tbodyaccjerkstdx
+16.tbodyaccjerkstdx
 
-17.             tbodyaccjerkstdy
+17.tbodyaccjerkstdy
 
-18.             tbodyaccjerkstdz
+18.tbodyaccjerkstdz
 
-19.               tbodygyromeanx
+19.tbodygyromeanx
 
-20.               tbodygyromeany
+20.tbodygyromeany
 
-21.               tbodygyromeanz
+21.tbodygyromeanz
 
-22.                tbodygyrostdx
+22.tbodygyrostdx
 
-23.                tbodygyrostdy
+23.tbodygyrostdy
 
-24.                tbodygyrostdz
+24.tbodygyrostdz
 
-25.           tbodygyrojerkmeanx
+25.tbodygyrojerkmeanx
 
-26.           tbodygyrojerkmeany
+26.tbodygyrojerkmeany
 
-27.           tbodygyrojerkmeanz
+27.tbodygyrojerkmeanz
 
-28.            tbodygyrojerkstdx
+28.tbodygyrojerkstdx
 
-29.            tbodygyrojerkstdy
+29.tbodygyrojerkstdy
 
-30.            tbodygyrojerkstdz
+30.tbodygyrojerkstdz
 
-31.              tbodyaccmagmean
+31.tbodyaccmagmean
 
-32.               tbodyaccmagstd
+32.tbodyaccmagstd
 
-33.           tgravityaccmagmean
+33.tgravityaccmagmean
 
-34.            tgravityaccmagstd
+34.tgravityaccmagstd
 
-35.          tbodyaccjerkmagmean
+35.tbodyaccjerkmagmean
 
-36.           tbodyaccjerkmagstd
+36.tbodyaccjerkmagstd
 
-37.             tbodygyromagmean
+37.tbodygyromagmean
 
-38.              tbodygyromagstd
+38.tbodygyromagstd
 
-39.         tbodygyrojerkmagmean
+39.tbodygyrojerkmagmean
 
-40.          tbodygyrojerkmagstd
+40.tbodygyrojerkmagstd
 
-41.                fbodyaccmeanx
+41.fbodyaccmeanx
 
-42.                fbodyaccmeany
+42.fbodyaccmeany
 
-43.                fbodyaccmeanz
+43.fbodyaccmeanz
 
-44.                 fbodyaccstdx
+44.fbodyaccstdx
 
-45.                 fbodyaccstdy
+45.fbodyaccstdy
 
-46.                 fbodyaccstdz
+46.fbodyaccstdz
 
-47.            fbodyaccmeanfreqx
+47.fbodyaccmeanfreqx
 
-48.            fbodyaccmeanfreqy
+48.fbodyaccmeanfreqy
 
-49.            fbodyaccmeanfreqz
+49.fbodyaccmeanfreqz
 
-50.            fbodyaccjerkmeanx
+50.fbodyaccjerkmeanx
 
-51.            fbodyaccjerkmeany
+51.fbodyaccjerkmeany
 
-52.            fbodyaccjerkmeanz
+52.fbodyaccjerkmeanz
 
-53.             fbodyaccjerkstdx
+53.fbodyaccjerkstdx
 
-54.             fbodyaccjerkstdy
+54.fbodyaccjerkstdy
 
-55.             fbodyaccjerkstdz
+55.fbodyaccjerkstdz
 
-56.        fbodyaccjerkmeanfreqx
+56.fbodyaccjerkmeanfreqx
 
-57.        fbodyaccjerkmeanfreqy
+57.fbodyaccjerkmeanfreqy
 
-58.        fbodyaccjerkmeanfreqz
+58.fbodyaccjerkmeanfreqz
 
-59.               fbodygyromeanx
+59.fbodygyromeanx
 
-60.               fbodygyromeany
+60.fbodygyromeany
 
-61.               fbodygyromeanz
+61.fbodygyromeanz
 
-62.                fbodygyrostdx
+62.fbodygyrostdx
 
-63.                fbodygyrostdy
+63.fbodygyrostdy
 
-64.                fbodygyrostdz
+64.fbodygyrostdz
 
-65.           fbodygyromeanfreqx
+65.fbodygyromeanfreqx
 
-66.           fbodygyromeanfreqy
+66.fbodygyromeanfreqy
 
-67.           fbodygyromeanfreqz
+67.fbodygyromeanfreqz
 
-68.              fbodyaccmagmean
+68.fbodyaccmagmean
 
-69.               fbodyaccmagstd
+69.fbodyaccmagstd
 
-70.          fbodyaccmagmeanfreq
+70.fbodyaccmagmeanfreq
 
-71.      fbodybodyaccjerkmagmean
+71.fbodybodyaccjerkmagmean
 
-72.       fbodybodyaccjerkmagstd
+72.fbodybodyaccjerkmagstd
 
-73.  fbodybodyaccjerkmagmeanfreq
+73.fbodybodyaccjerkmagmeanfreq
 
-74.         fbodybodygyromagmean
+74.fbodybodygyromagmean
 
-75.          fbodybodygyromagstd
+75.fbodybodygyromagstd
 
-76.     fbodybodygyromagmeanfreq
+76.fbodybodygyromagmeanfreq
 
-77.     fbodybodygyrojerkmagmean
+77.fbodybodygyrojerkmagmean
 
-78.      fbodybodygyrojerkmagstd
+78.fbodybodygyrojerkmagstd
 
-79. fbodybodygyrojerkmagmeanfreq
+79.fbodybodygyrojerkmagmeanfreq
 
 
 ####mean:              
@@ -241,10 +241,7 @@ performing the activities. The values are numeric.
 ######Acknowledgements:
 
 This entire cleaning operation would not have been possible without references to the following entries from the 
-
-    Discussion Groups
-
-
+Discussion Groups like 
 
 These datasets were a derivation of those mentioned in the following publication.
 
