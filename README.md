@@ -4,7 +4,9 @@
 Note to testers:
 
 1. You can read the final file from step 5 using 'data<-read.table("TidyData.txt")' and examine them using the many
-   functions such as head, str, summary etc. in R. 
+   functions such as head, str, summary etc. in R.  Since the file red in will not have any column names, you can 
+   apply 'names(data)<-c("subjectid","activityname","featurename", "measurementvalue")' to give meaningful labels 
+   to the columns.
 
 2. You can source the run_analysis.R file in your main directory as long as the data directory "UCI HAR Dataset" 
    and its necessary sub-direactories are in it.
@@ -102,6 +104,11 @@ The course project requirement is to create a run_analysis.R script that accompl
                 2. Use the "ddply" from the plyr package to summarize the data using mean function 
                    as mentioned in the final step 5 of the requirements.
                    
-                3. Write out the file using write.table with the row.name=FALSE option.
+                3. Write out the file using write.table with the row.name=FALSE option. 
+                   Note: This row.name=FALSE option will remove the column names.
                 
 ##Conclusions:         
+This exercise, while appearing complex at first turned out to be quite easy at the end onec the requirements were better understood. It provided for an end-to-end data tidying experience and required all concepts from week 1 to week 4 lessons (especially if you used grep). 
+
+##Acknowledgements:
+A lot of gratitude to the discussion forum members who analyzed the topics at end and special thanks to David Hood's FAQ which answered some questions even before I thought to ask them. And all the other TA's out there confirming or clarifying the doubts.
